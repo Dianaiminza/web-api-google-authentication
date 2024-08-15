@@ -40,7 +40,7 @@ namespace web_api_google_authentication.Configurations
               typeof(Program).Assembly.GetCustomAttribute<AssemblyDescriptionAttribute>()?.Description;
             var info = new OpenApiInfo
             {
-                Title = $"MTN Adapter API V{description.ApiVersion}",
+                Title = $"Google Authentication API V{description.ApiVersion}",
                 Version = description.ApiVersion.ToString(),
                 Description = description.IsDeprecated
                 ? $"{assemblyDescription} - DEPRECATED"
